@@ -13,4 +13,4 @@ else {
   })
 }
 
-module.exports = connnection
+module.exports = connection
