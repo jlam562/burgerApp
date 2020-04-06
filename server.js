@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
+const PORT = process.env.PORT || 3000
 
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static(join(__dirname, 'public')))
@@ -15,4 +16,4 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
-app.listen(3000)
+app.listen(PORT)
