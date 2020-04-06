@@ -13,7 +13,7 @@ app.set('view engine', 'jsx')
 app.use(require('./routes'))
 
 app.get('/', (req, res) => {
-  res.render('home')
+  res.render('burgers')
 })
 
 app.listen(PORT)
